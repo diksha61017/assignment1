@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Development Assignment</title>
+</head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<style>
+    #outerdiv
+    {
+        height:100%;
+        width:100%;
+        background:white;
+    }
+    #block1
+    {
+        height:600px;
+        width:90%;
+        //background:#f2f2f2;
+        padding-top:10%;
+        margin-left:5%;
+    }
+
+    #btn1:hover
+    {
+        background-color:black;
+        color:white;
+        cursor:pointer;
+
+    }
+    #block2
+    {
+        height:300px;
+        width:85%;
+        margin-left:7.5%;
+        background:gray;
+        padding-top:2.5%;
+    }
+    #imagediv
+    {
+        margin-left:20%;
+
+    }
+    #tablediv1
+    {
+        background:white;
+        width:400px;
+        height:40px;
+        text-align:left;
+        padding-left:5px;
+    }
+    #tablediv2
+    {
+        background:#f2f2f2;
+
+        height:40px;
+        width:100px;
+        text-align:center;
+    }
+    #tablediv3
+    {
+        background:#f2f2f2;
+
+        height:40px;
+        width:150px;
+        text-align:center;
+    }
+    #block3
+    {
+        height:200px;
+        margin-top:10%;
+        background:white;
+    }
+    #block3div
+    {
+        height:50px;
+        width:150px;
+        background:white;
+        box-shadow: 2px 2px 2px gray;
+        color:black;
+        text-align:center;
+        font-size:20px;
+        padding-top:7px;
+        margin-left:2px;
+    }
+    #block3div:hover
+    {
+        border:3px blue solid;
+    }
+    .switch
+    {
+        position:relative;
+        display:inline-block;
+        width:60px;
+        height:32px;
+        margin-top:50px;
+    }
+    .switch input
+    {
+        opacity:0;
+        width:0;
+        height:0;
+    }
+    .slider.round
+    {
+        border-radius:34px;
+
+    }
+    .slider.round:before
+    {
+        border-radius:50%;
+    }
+    .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 24px;
+  width: 24px;
+
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+#block4
+{
+    height:300px;
+    width:100%;
+
+}
+#block4div
+{
+    height:210px;
+    width:210px;
+    background:white;
+    margin-top:30%;
+    margin-left:5px;
+    padding-left:20px;
+}
+#block4div:hover
+{
+transition:2s;
+transform:scale(1.15);
+box-shadow:2px 2px 2px 2px gray;
+}
+#block5
+{
+    height:300px;
+    width:100%;
+    background:white;
+}
+#imgdiv2
+{
+    border-radius:50%;
+
+}
+</style>
+<body>
+<div id="outerdiv">
+<div id="block1">
+    <table style="margin-left:10%;">
+        <tr>
+    <td><div style="font-size:50px; font-family:Bahnschrift Condensed; margin-left:18%">
+        <b>LOOKING FOR A<br/>LOLLIPOP ALTERNATVE ?</b></div>
+    <p style="margin-left:18% ;font-size:20px;">
+        Lorem Ipsum is simply text bof printing and typesetting industry.<br/> Loreum Ipsum has been the indusry's standard dummy text<br/> ever since in 1500s
+    </p></td>
+            <td>
+    <div id="imagediv">
+        <img src="globe2.jpg" height="200px"; width="250px">
+    </div></td>
+        </tr>
+        </table>
+    <button id="btn1" style="height:60px;width:200px;border-radius:15px;background:white;color:black;margin-left:18%">
+        <b>PRIMARY CTA</b>
+    </button>
+    <button id="btn1" style="height:60px;width:200px;border-radius:15px;background:white;color:black;margin-left:3%">
+        <b>SECONDARY CTA</b>
+    </button>
+</div>
+<div id="block2">
+    <center>
+       <b style="font-size:30px;color:white"> This is a heading in two lines</b>
+        <div>
+            <table style="margin-top:5%">
+                <tr>
+                    <th>
+                       <div id="tablediv1">       </div>
+                    </th>
+                    <th>
+                        <div id="tablediv2">  lollipop   </div>
+                    </th>
+                    <th>
+                        <div id="tablediv3">    icecandy    </div>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                       <div id="tablediv1">   Loreum Ipsum 1    </div>
+                    </td>
+                    <td>
+                        <div id="tablediv2">  <span class="glyphicon glyphicon-ok"></span>  </div>
+                    </td>
+                    <td>
+                        <div id="tablediv3">  <span class="glyphicon glyphicon-ok"></span>  </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                       <div id="tablediv1">   Loreum Ipsum 2   </div>
+                    </td>
+                    <td>
+                        <div id="tablediv2">  <span class="glyphicon glyphicon-ok"></span>  </div>
+                    </td>
+                    <td>
+                        <div id="tablediv3">  <span class="glyphicon glyphicon-ok"></span>  </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                       <div id="tablediv1">   Loreum Ipsum 3   </div>
+                    </td>
+                    <td>
+                        <div id="tablediv2">  <span class="glyphicon glyphicon-ok"></span>  </div>
+                    </td>
+                    <td>
+                        <div id="tablediv3">  <span class="glyphicon glyphicon-remove"></span>  </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                       <div id="tablediv1">   Loreum Ipsum 4   </div>
+                    </td>
+                    <td>
+                        <div id="tablediv2">  <span class="glyphicon glyphicon-ok"></span>  </div>
+                    </td>
+                    <td>
+                        <div id="tablediv3">  <span class="glyphicon glyphicon-remove"></span>  </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                       <div id="tablediv1">   Loreum Ipsum 5   </div>
+                    </td>
+                    <td>
+                        <div id="tablediv2">  <span class="glyphicon glyphicon-ok"></span>  </div>
+                    </td>
+                    <td>
+                        <div id="tablediv3">  <span class="glyphicon glyphicon-remove"></span>  </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                       <div id="tablediv1">   Loreum Ipsum 6  </div>
+                    </td>
+                    <td>
+                        <div id="tablediv2">  <span class="glyphicon glyphicon-ok"></span>  </div>
+                    </td>
+                    <td>
+                        <div id="tablediv3">  <span class="glyphicon glyphicon-ok"></span>  </div>
+                    </td>
+                </tr>
+
+            </table>
+
+        </div>
+    </center>
+</div>
+    <div id="block3">
+        <center>
+            <b style="font-size:40px;">Compare pricing today!</b><br/>
+            Loreum Ipsum is a dummy text of the printing and typesetting.
+            <table style="margin-top:20px">
+                <tr>
+                    <td>
+                        <div id="block3div">25 Server</div>
+                    </td>
+                    <td>
+                        <div id="block3div">50 Server</div>
+                    </td>
+                    <td>
+                        <div id="block3div">100 Server</div>
+                    </td>
+                    <td>
+                        <div id="block3div">500 Server</div>
+                    </td>
+                </tr>
+            </table>
+            <b style="font-size:20px">Annual&nbsp&nbsp</b>
+            <label class="switch">
+                <input type="checkbox" />
+                <span class="slider round"></span>
+            </label><b style="font-size:20px">&nbsp&nbspMonth</b>
+        </center>
+
+    </div>
+    <div id="block4">
+        <center>
+        <table>
+            <tr>
+                <td>
+                    <div id="block4div">
+                        <b style="font-size:35px">Lollipop</b><br/>
+                        <big style="font-size:25px">$100</big><small>per month</small><br/>
+                        For 100 serving
+                    </div>
+
+                </td>
+                <td>
+                    <div id="block4div">
+                        <b style="font-size:35px">Icecandy</b><br/>
+                        <big style="font-size:25px">$200</big><small>per month</small><br/>
+                        For 100 serving
+                    </div>
+
+                </td>
+                <td>
+                    <div id="block4div">
+                        <b style="font-size:30px">Your savings with lollipop</b>
+                        <big style="font-size:25px">$100</big><small>per month</small><br/>
+                        For 100 serving
+                    </div>
+
+                </td>
+            </tr>
+
+        </table>
+            </center>
+    </div>
+    <div id="block5">
+        <center>
+        <b style="font-size:32px;">Here's what our customer have to say</b>
+            <table style="margin-top:50px;">
+                <tr>
+                    <td>
+                        <div id="block5div">
+                            <img src="pic1.jpg" height="200px" width="200px" id="imgdiv2"/>
+                        </div>
+                    </td>
+                    <td>
+                    <div style="margin-left:25%;">
+                        <p style="font-size:18px"><sub style="font-size:50px;">"</sub>Lorem Ipsum is simply dummy text of<br/printing and typesetting industry. loreum Ipsum has been<br/> the industry's
+                             standard dummy texting ever since 1500s.
+                        <br/>
+                        <br/>
+                        <b style="font-size:25px">Raja Ram</b>
+
+                        <br/>
+                        Tip World
+
+                        </p>
+                    </div>
+                    </td>
+                </tr>
+            </table>
+            </center>
+    </div>
+    <div id="block6">
+        <center>
+    <table style="margin-top:80px;">
+        <tr>
+
+            <td>
+                <b style="font-size:25px">Loved by users,<br/> recommended by experts.</b>
+                <p>
+                    Lorem Ipsum is simply dummy text of printing and typesetting<br/> industry. Loreum Ipsum has been the industry's standard<br/>
+                    dummy text ever since 1500s.
+                    <br/>
+                    <br/>
+                    <button style="background:blue;color:white;height:50px;width:150px;font-size:18px;border-radius:5px;">Primary CTA</button>
+                </p>
+            </td>
+            <td>
+                <div style="margin-left:50px;">
+                    <img src="pic2.gif" height="200px" width="200px"/>
+                </div>
+            </td>
+        </tr>
+    </table>
+    </center>
+    </div>
+
+</div>
+</body>
+</html>
